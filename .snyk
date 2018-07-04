@@ -1,0 +1,15 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:http-signature:20150122':
+    - generator-bastion > yeoman-generator > request > http-signature:
+        patched: '2018-07-04T21:13:36.922Z'
+    - grunt-bower-task > bower > bower-registry-client > request > http-signature:
+        patched: '2018-07-04T21:13:36.922Z'
+    - grunt-bower-task > bower > request > http-signature:
+        patched: '2018-07-04T21:13:36.922Z'
+  'npm:lodash:20180130':
+    - grunt-karma > lodash:
+        patched: '2018-07-04T21:13:36.922Z'
